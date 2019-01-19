@@ -1,0 +1,19 @@
+1. spectacle  # used to maximize the window in focus
+
+2. Karabiner-elements  # used to map left arrow key to left control
+
+3. homebrew  # used to install all kinds of command line tools 
+    # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # see: https://brew.sh/
+
+4. brew install bash  # to install the latest bash, the default bash come with mac os is too old to support different inputrc cursor shape
+
+5. shadowsocks  # 
+
+6. some tools: cmake, git, etc.
+
+7. brew install coreutils  # to be able to use gnu core utilities
+    # see: https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities
+
+8. stuff related to programming:
+    python3, meshlab, cgal, pcl
