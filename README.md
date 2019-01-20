@@ -1,3 +1,3 @@
-# dotfiles for Mac OS
+# dotfiles for Ubuntu
 
-all the dotfiles in current branch are for Mac os
+all the dotfiles in current branch are for Ubuntu
