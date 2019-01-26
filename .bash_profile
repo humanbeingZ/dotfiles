@@ -1,4 +1,3 @@
-
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
@@ -15,6 +14,9 @@ alias readlink="greadlink"
 alias copy="ghead -c -1 | pbcopy"
 alias ll="ls -l"
 alias l="ls -l"
+
+# aliases related to other tools
+alias marp="/Applications/Marp.app/Contents/MacOS/Marp"
 
 # aliases related to python
 alias python="python3"
