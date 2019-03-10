@@ -1,7 +1,7 @@
 1. shadowsocks  # 
 
 2. tools related to terminal:
-    vim, xsel, etc.
+    vim, xsel, ctags(to use together with vim), etc.
 
 2. some tools: cmake, git, etc.
 
