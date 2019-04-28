@@ -35,3 +35,9 @@ set EDITOR=vim
 export default_ps1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w\[\033[00m\]\$ '
 
+# disable trackpad
+# xinput
+# xinput | grep TouchPad | grep id
+# xinput disable 11 (11 is the touchpad id)
+# enable trackpad
+# xinput enable 11 (11 is the touchpad id)
