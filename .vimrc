@@ -48,3 +48,6 @@ let &t_EI = "\e[2 q"
 
 " optional reset cursor on start:
 autocmd VimEnter * silent !echo -ne "\e[2 q"
+
+" seem to make vim color consistent inside and outside tmux
+set background=dark
