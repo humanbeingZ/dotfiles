@@ -9,18 +9,11 @@ noremap <right> <Nop>
 noremap <up> <Nop>
 noremap <down> <Nop>
 
-
 inoremap jj <Esc>
 vnoremap x "_x
 
 set mouse=a
-set expandtab
-set tabstop=2  
-set shiftwidth=2
-set autoindent
-set complete-=i 
 
-" set nohls
 set hls
 hi Search cterm=NONE ctermfg=black ctermbg=magenta
 
@@ -30,14 +23,24 @@ highlight LineNr ctermfg=Gray
 filetype on
 syntax on
 
-" set foldmethod=marker 
-" set foldmarker={,}
-set foldmethod=syntax
+set autoindent
+set ignorecase
+set smartcase
+set expandtab
 
-au BufRead *.py
-    \ set tabstop=4 | 
-    \ set foldmethod=indent |
-    \ set shiftwidth=4
+au FileType python 
+    \ set tabstop=4 shiftwidth=4 |
+    \ set foldmethod=indent
+
+au FileType c,cpp
+    \ set tabstop=2 shiftwidth=2 | 
+    \ set complete-=i | 
+    \ set foldmethod=syntax
+    " \ set foldmethod=marker foldmarker={,}
+
+au FileType make 
+    \ set noexpandtab 
+    \ set tabstop=4 shiftwidth=4
 
 au BufRead * normal zR
 
@@ -47,7 +50,7 @@ let &t_SR = "\e[4 q"
 let &t_EI = "\e[2 q"
 
 " optional reset cursor on start:
-autocmd VimEnter * silent !echo -ne "\e[2 q"
+" autocmd VimEnter * silent !echo -ne "\e[2 q"
 
 " seem to make vim color consistent inside and outside tmux
 set background=dark
