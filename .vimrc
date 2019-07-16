@@ -52,5 +52,10 @@ let &t_EI = "\e[2 q"
 " optional reset cursor on start:
 " autocmd VimEnter * silent !echo -ne "\e[2 q"
 
-" seem to make vim color consistent inside and outside tmux
+" set background dark to make vim behave the same outside and inside tmux
+" see: https://unix.stackexchange.com/a/363374
 set background=dark
+
+" ctags file
+" https://stackoverflow.com/questions/8285232/vim-set-ctags-in-vimrc/8285918#8285918
+set tags=./tags,tags;
